@@ -1,11 +1,12 @@
 from obswebsocket import obsws, requests 
+import os
 
 def cambiarEscena(data):
     print(data)
     escena = data["escena"]
     host = "localhost"
     port = 4440
-    password = "kabska83"
+    password = os.environ.get('passOBS')
 
     ws = obsws(host, port, password)
     ws.connect()
@@ -21,7 +22,7 @@ def cambiarEscena(data):
 def iniciarStream(data):
     host = "localhost"
     port = 4440
-    password = "kabska83"
+    password = os.environ.get('passOBS')
 
     ws = obsws(host, port, password)
     ws.connect()
@@ -37,7 +38,7 @@ def iniciarStream(data):
 def pararStream(data):
     host = "localhost"
     port = 4440
-    password = "kabska83"
+    password = os.environ.get('passOBS')
 
     ws = obsws(host, port, password)
     ws.connect()
@@ -53,7 +54,7 @@ def pararStream(data):
 def muteOBS(data):
     host = "localhost"
     port = 4440
-    password = "kabska83"
+    password = os.environ.get('passOBS')
 
     ws = obsws(host, port, password)
     ws.connect()

@@ -1,8 +1,9 @@
 import requests
 import json
+import os
 
 def prenderLuces(data):
-    headers = {'Govee-API-Key': '5dca67a4-e3f7-46ed-9aef-32da432f1f51'}
+    headers = {'Govee-API-Key': os.environ.get('goveeapikey')}
 
     r = requests.get('https://developer-api.govee.com/v1/devices', headers=headers)
     data = json.loads(r.text)
@@ -19,7 +20,7 @@ def prenderLuces(data):
     r = requests.put('https://developer-api.govee.com/v1/devices/control', headers=headers, json=dataSend)
 
 def apagarLuces(data):
-    headers = {'Govee-API-Key': '5dca67a4-e3f7-46ed-9aef-32da432f1f51'}
+    headers = {'Govee-API-Key': os.environ.get('goveeapikey')}
 
     r = requests.get('https://developer-api.govee.com/v1/devices', headers=headers)
     data = json.loads(r.text)
@@ -39,7 +40,7 @@ def cambiarColor(dataP):
     red = dataP['r']
     g = dataP['g']
     b = dataP['b']
-    headers = {'Govee-API-Key': '5dca67a4-e3f7-46ed-9aef-32da432f1f51'}
+    headers = {'Govee-API-Key': os.environ.get('goveeapikey')}
 
     r = requests.get('https://developer-api.govee.com/v1/devices', headers=headers)
     data = json.loads(r.text)
@@ -58,7 +59,7 @@ def cambiarColor(dataP):
 
 def cambiarBrillo(dataP):
     brillo = int(dataP['brillo'])
-    headers = {'Govee-API-Key': '5dca67a4-e3f7-46ed-9aef-32da432f1f51'}
+    headers = {'Govee-API-Key': os.environ.get('goveeapikey')}
 
     r = requests.get('https://developer-api.govee.com/v1/devices', headers=headers)
     data = json.loads(r.text)
