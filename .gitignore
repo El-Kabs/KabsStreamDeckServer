@@ -1,0 +1,7 @@
+./upload
+./assets
+./pycache
+*.bat
+upload
+assets
+pycache

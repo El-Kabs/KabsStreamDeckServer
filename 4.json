@@ -1,0 +1,5 @@
+[{"ruta": "D:\\Blizzard\\Hearthstone\\Hearthstone.exe", "imagen": "./upload\\Game - Hearthstone.jpg", "titulo": "Hearthstone", "func": "abrirPrograma", "boton": 1}, 
+    {"ruta": "steam://rungameid/1506830", "imagen": "./upload\\FIFA.png", "titulo": "FIFA", "func": "abrirPrograma", "boton": 2}, 
+    {"ruta": "steam://rungameid/730", "imagen": "./upload\\Game - CounterStrike.jpg", "titulo": "CSGO", "func": "abrirPrograma", "boton": 3}, 
+    {"ruta": "C:\\Riot Games\\Riot Client\\RiotClientServices.exe", "imagen": "./upload\\RiotClient.png", "titulo": "Riot", "func": "abrirPrograma", "boton": 4},
+     {"ruta": "steam://rungameid/1063730", "imagen": "./upload\\NewWorld.png", "titulo": "New World", "func": "abrirPrograma", "boton": 5}, {"titulo": "", "boton": 6}, {"titulo": "", "boton": 7}, {"titulo": "", "boton": 8}, {"titulo": "", "boton": 9}, {"titulo": "", "boton": 10}, {"titulo": "", "boton": 11}, {"titulo": "", "boton": 12}, {"titulo": "", "boton": 13}, {"titulo": "", "boton": 14}, {"titulo": "", "boton": 15}]
